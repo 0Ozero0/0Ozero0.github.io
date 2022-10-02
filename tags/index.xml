@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on ~Zero</title>
+    <link>https://0ozero0.github.io/tags/</link>
+    <description>Recent content in Tags on ~Zero</description>
+    <image>
+      <url>https://0ozero0.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://0ozero0.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 21 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://0ozero0.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>black-Hat-MEA-CTF</title>
+      <link>https://0ozero0.github.io/tags/black-hat-mea-ctf/</link>
+      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://0ozero0.github.io/tags/black-hat-mea-ctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blackhat</title>
+      <link>https://0ozero0.github.io/tags/blackhat/</link>
+      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://0ozero0.github.io/tags/blackhat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CTFS</title>
+      <link>https://0ozero0.github.io/tags/ctfs/</link>
+      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://0ozero0.github.io/tags/ctfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://0ozero0.github.io/tags/web/</link>
+      <pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://0ozero0.github.io/tags/web/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
