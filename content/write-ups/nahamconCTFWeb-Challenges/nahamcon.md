@@ -34,7 +34,8 @@ cover:
 
 When accessing the web app, the following page is displayed![enter image description here](https://i.imgur.com/xF8hVwV.png)
 While attempting to view an image using the following URL format: `http://challenge.nahamcon.com:31368/browse?artifact=angwy.jpg`, I noticed that the application calls the image through the `?artifact` parameter. Exploiting this behavior, I attempted a Local File Inclusion (LFI) attack by modifying the URL to access sensitive files such as `/.etc/passwd`. However, I encountered an obstacle as I couldn't directly read the flag. As a result, I started investigating the location of the application by exploring `/proc/self/cmdline`.
-![enter image description here](https://imgur.com/QzxBY50)
+
+![enter image description here]([https://i.imgur.com/QzxBY50.png)
 reading source of application 
 
 /home/museum/app.py
