@@ -29,14 +29,5 @@
       <description>Solving nahamconCTF/2023 Web challenges.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://0ozero0.github.io/write-ups/nahamcon-ctf-2023/webchallenges/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://0ozero0.github.io/write-ups/nahamcon-ctf-2023/webchallenges/</guid>
-      <description>Museum Challenge When accessing the web app, the following page is displayed While attempting to view an image using the following URL format: http://challenge.nahamcon.com:31368/browse?artifact=angwy.jpg, I noticed that the application calls the image through the ?artifact parameter. Exploiting this behavior, I attempted a Local File Inclusion (LFI) attack by modifying the URL to access sensitive files such as /.etc/passwd. However, I encountered an obstacle as I couldn&amp;rsquo;t directly read the flag. As a result, I started investigating the location of the application by exploring /proc/self/cmdline.</description>
-    </item>
-    
   </channel>
 </rss>
