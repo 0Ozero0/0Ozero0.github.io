@@ -1,6 +1,7 @@
 baseURL: "https://0ozero0.github.io/"
 title: "~Zero"
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -8,24 +9,22 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-# إذا تملك Google Analytics 4 استبدل Measurement ID الخاص بك هنا
-# googleAnalytics: "G-XXXXXXXXXX"
-googleAnalytics: UA-123-45  # مثال قديم - استبدله أو علّقه إذا تستخدم GA4
+# Google Analytics 4 - استبدل الـ ID الخاص بك هنا
+googleAnalytics: "G-XXXXXXXXXX" # بدل UA-123-45 بـ GA4 Measurement ID
 
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
-  env: production # لتفعيل التحليلات وopen graph وtwitter cards وschema
+  env: production
   title: Zero
   description: "Zero description"
   keywords: [Blog, Portfolio, Security Researcher]
   author: Zero
-  # author: ["Me", "You"] # في حال وجود مؤلفين متعددين
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: dark # الخيارات: dark, light
+  defaultTheme: dark
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -45,7 +44,6 @@ params:
   tocopen: true
 
   assets:
-    # يمكنك إضافة روابط أيقونات حقيقية هنا بدل <link / abs url>
     favicon: "https://i.ibb.co/fG1ndSd/no-clue.png"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
@@ -133,8 +131,7 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON  # ضروري لعمل البحث حسب الوثائق
+    - JSON
 
-# أضفت هنا taxonomy social لو حبيت تضيف social كتصنيفات بدل استخدام .Site.Social
 taxonomies:
-  social: "social"
+  social: "social"  # فقط إذا تريد استخدام taxonomy لـ social، لكن مش ضروري إذا القالب لا يدعمها
