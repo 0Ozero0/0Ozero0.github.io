@@ -1,5 +1,6 @@
 baseURL: "https://0ozero0.github.io/"
 title: "~Zero"
+paginate: 5
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -7,23 +8,24 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-# تعليق Google Analytics Universal لأنه Deprecated
-# لو عندك Google Analytics 4 حط هنا كود الـ Measurement ID الخاص بيه
-# googleAnalytics: "G-XXXXXXXXXX" 
+# إذا تملك Google Analytics 4 استبدل Measurement ID الخاص بك هنا
+# googleAnalytics: "G-XXXXXXXXXX"
+googleAnalytics: UA-123-45  # مثال قديم - استبدله أو علّقه إذا تستخدم GA4
 
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
-  env: production
+  env: production # لتفعيل التحليلات وopen graph وtwitter cards وschema
   title: Zero
   description: "Zero description"
   keywords: [Blog, Portfolio, Security Researcher]
   author: Zero
+  # author: ["Me", "You"] # في حال وجود مؤلفين متعددين
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: dark
+  defaultTheme: dark # الخيارات: dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -43,6 +45,7 @@ params:
   tocopen: true
 
   assets:
+    # يمكنك إضافة روابط أيقونات حقيقية هنا بدل <link / abs url>
     favicon: "https://i.ibb.co/fG1ndSd/no-clue.png"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
@@ -80,11 +83,11 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag: "CTFS - Security Blog | Hacking "
+      SiteVerificationTag: "CTFS - Security Blog | Hacking"
     bing:
-      SiteVerificationTag: "CTFS - Security Blog | Hacking "
+      SiteVerificationTag: "CTFS - Security Blog | Hacking"
     yandex:
-      SiteVerificationTag: "CTFS - Security Blog | Hacking "
+      SiteVerificationTag: "CTFS - Security Blog | Hacking"
 
   cover:
     hidden: true
@@ -125,3 +128,13 @@ markup:
     guessSyntax: true
     lineNos: true
     style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON  # ضروري لعمل البحث حسب الوثائق
+
+# أضفت هنا taxonomy social لو حبيت تضيف social كتصنيفات بدل استخدام .Site.Social
+taxonomies:
+  social: "social"
