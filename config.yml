@@ -1,6 +1,5 @@
 baseURL: "https://0ozero0.github.io/"
-title: ~Zero
-paginate: 5
+title: "~Zero"
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -8,22 +7,23 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
+# تعليق Google Analytics Universal لأنه Deprecated
+# لو عندك Google Analytics 4 حط هنا كود الـ Measurement ID الخاص بيه
+# googleAnalytics: "G-XXXXXXXXXX" 
 
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   title: Zero
   description: "Zero description"
   keywords: [Blog, Portfolio, Security Researcher]
   author: Zero
-  # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: dark # dark, light
+  defaultTheme: dark
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -43,8 +43,6 @@ params:
   tocopen: true
 
   assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
     favicon: "https://i.ibb.co/fG1ndSd/no-clue.png"
     favicon16x16: "<link / abs url>"
     favicon32x32: "<link / abs url>"
@@ -56,9 +54,8 @@ params:
     icon: /apple-touch-icon.png
     iconHeight: 35
 
-  # profile-mode
   profileMode:
-    enabled: true # needs to be explicitly set
+    enabled: true
     title: Intro
     subtitle: "I'm Ahmed Muhammed | AKA zero | Security Researcher - Bug Hunter - CTF player"
     imageUrl: "https://i.imgur.com/1LYnfCU.jpg"
@@ -71,10 +68,10 @@ params:
       - name: Tags
         url: tags
 
-  # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog, I'm Zero Security Researcher -CTF player
+    Content: "Welcome to my blog, I'm Zero Security Researcher -CTF player"
+
   socialIcons:
     - name: linkedin
       url: "https://www.linkedin.com/in/ahmed-muhammed-709429242"
@@ -90,21 +87,19 @@ params:
       SiteVerificationTag: "CTFS - Security Blog | Hacking "
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
 
+fuseOpts:
+  isCaseSensitive: false
+  shouldSort: true
+  location: 0
+  distance: 1000
+  threshold: 0.4
+  minMatchCharLength: 0
+  keys: ["title", "permalink", "summary", "content"]
 
-  # for search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
     - identifier: Write-ups
@@ -119,19 +114,13 @@ menu:
       name: search
       url: /search/
       weight: 10
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+
 pygmentsUseClasses: true
+
 markup:
   highlight:
     noClasses: false
     anchorLineNos: true
     codeFences: true
     guessSyntax: true
-    lineNos: true
-    style: monokai
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON # is necessary
+    line
