@@ -9,8 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-# Google Analytics 4 - استبدل الـ ID الخاص بك هنا
-googleAnalytics: "G-XXXXXXXXXX" # بدل UA-123-45 بـ GA4 Measurement ID
+googleAnalytics: "G-XXXXXXXXXX"  # لو مش عندك، علق السطر ده
 
 minify:
   disableXML: true
@@ -73,12 +72,6 @@ params:
     Title: "Hi there \U0001F44B"
     Content: "Welcome to my blog, I'm Zero Security Researcher -CTF player"
 
-  socialIcons:
-    - name: linkedin
-      url: "https://www.linkedin.com/in/ahmed-muhammed-709429242"
-    - name: facebook
-      url: "https://www.facebook.com/profile.php?id=100012719656071"
-
   analytics:
     google:
       SiteVerificationTag: "CTFS - Security Blog | Hacking"
@@ -132,6 +125,3 @@ outputs:
     - HTML
     - RSS
     - JSON
-
-taxonomies:
-  social: "social"  # فقط إذا تريد استخدام taxonomy لـ social، لكن مش ضروري إذا القالب لا يدعمها
